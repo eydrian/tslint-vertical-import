@@ -4,7 +4,7 @@
   "description": "Custom tslint rule to enforces vertical alignment of imports",
   "main": "dist/index.js",
   "scripts": {
-    "prepublish": "npm run test && npm run build",
+    "prepublish": " npm run build && npm run test",
     "start": "mkdir -p dist && npm run build",
     "build": "tsc src/*.ts --outDir dist/",
     "test": "tslint --test test"

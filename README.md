@@ -1,4 +1,4 @@
-# 🔬 tslint-vertical-import
+# tslint-vertical-import
 
 This is a custom [TSLint](https://palantir.github.io/tslint/) rule that checks
 for that imports are vertically aligned:
