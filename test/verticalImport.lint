@@ -1,6 +1,11 @@
 import 'library';
+
 import * as library from 'library';
 
+import library from 'library';
+
+import { default as library } from 'library';
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [vertical-import]
 import { Library } from 'library';
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [vertical-import]
 
@@ -35,5 +40,6 @@ import { Library,
 ~~~~~~~~~~~~~~~~
 } from 'library';
 ~~~~~~~~~~~~~~~~~ [vertical-import]
+
 
 [vertical-import]: Imports must be vertically aligned

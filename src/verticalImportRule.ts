@@ -36,8 +36,9 @@ class NoImportsWalker extends Lint.RuleWalker {
     const text = node.getText(this.getSourceFile());
     const aliasImport = new RegExp('import\\s*\\*\\s*as\\s*.*\\sfrom\\s*\'.*\'\;?', 'gm'); // alias imports can be on one line
     const simpleImport = new RegExp('import\\s*\'.*\'\;?', 'gm'); // complete imports can be on one line
+    const defaultImport = new RegExp('import\\s+\\w*\\s+from\\s+\'.*\'\;?', 'gm'); // default import can be on one line
 
-    if (!aliasImport.test(text) && !simpleImport.test(text)) {
+    if (!aliasImport.test(text) && !simpleImport.test(text) && !defaultImport.test(text)) {
       const lines = text.split('\n');
       const hasMultipleImportsOnOneLine = this.hasMultipleImportsOnSign(lines, ',');
 
