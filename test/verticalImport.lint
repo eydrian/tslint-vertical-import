@@ -1,0 +1,39 @@
+import 'library';
+import * as library from 'library';
+
+import { Library } from 'library';
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [vertical-import]
+
+import { Library, SecondLibrary } from 'library';
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [vertical-import]
+
+import {
+~~~~~~~~
+SecondLibrary } from 'library';
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [vertical-import]
+
+import { Library,
+~~~~~~~~~~~~~~~~~
+SecondLibrary } from 'library';
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [vertical-import]
+
+import {
+  Library,
+  SecondLibrary,
+} from 'library';
+
+import {
+~~~~~~~~
+  Library,
+~~~~~~~~~~
+  SecondLibrary } from 'library';
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [vertical-import]
+
+import { Library,
+~~~~~~~~~~~~~~~~~
+  SecondLibrary,
+~~~~~~~~~~~~~~~~
+} from 'library';
+~~~~~~~~~~~~~~~~~ [vertical-import]
+
+[vertical-import]: Imports must be vertically aligned
