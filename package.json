@@ -1,6 +1,6 @@
 {
   "name": "tslint-vertical-import",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Custom tslint rule to enforces vertical alignment of imports",
   "main": "dist/index.js",
   "scripts": {
